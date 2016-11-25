@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Facebook",
+    "url": "http://facebook.com",
+    "color": "#3b5998",
+    "logo": "Facebook_logo.png"
+  },
+  {
+    "name": "Pinterest",
+    "url": "http://www.pinterest.com/",
+    "color": "#cc2127",
+    "logo": "Pinterest_logo.png"
+  },
+  {
+    "name": "Car2Go",
+    "url": "https://www.car2go.com",
+    "color": "#009EE0",
+    "logo": "Car2Go_logo.png"
+  },
+  {
+    "name": "Shopify",
+    "url": "http://www.shopify.com/",
+    "color": "#96bf48",
+    "logo": "Shopify_logo.png"
+  },
+  {
+    "name": "Flickr",
+    "url": "http://www.flickr.com",
+    "color": "#0063dc",
+    "logo": "Flickr_logo.png"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/",
+    "color": "#0077b5",
+    "logo": "LinkedIn_logo.png"
+  },
+  {
+    "name": "Zipcar",
+    "url": "http://www.zipcar.com/",
+    "color": "#51A601",
+    "logo": "Zipcar_logo.png"
+  },
+  {
+    "name": "Squarespace",
+    "url": "http://squarespace.com",
+    "color": "#1C1C1C",
+    "logo": "Squarespace_logo.png"
+  },
+  {
+    "name": "Periscope",
+    "url": "http://www.paypal.com/",
+    "color": "#39A1BE",
+    "logo": "Periscope_logo.png"
+  },
+  {
+    "name": "StumbleUpon",
+    "url": "http://www.stumbleupon.com/",
+    "color": "#EB4924",
+    "logo": "StumbleUpon_logo.png"
+  },
+  {
+    "name": "Vine",
+    "url": "https://vine.co",
+    "color": "#00b488",
+    "logo": "Vine_logo.png"
+  },
+  {
+    "name": "Yelp",
+    "url": "http://www.yelp.com/brooklyn",
+    "color": "#af0606",
+    "logo": "Yelp_logo.png"
+  },
+  {
+    "name": "Android",
+    "url": "https://www.android.com/",
+    "color": "#a4c639",
+    "logo": "Android_logo.png"
+  },
+  {
+    "name": "Behance",
+    "url": "http://behance.net",
+    "color": "#1769ff",
+    "logo": "Behance_logo.png"
+  },
+  {
+    "name": "Postmates",
+    "url": "https://postmates.com/",
+    "color": "#36454f",
+    "logo": "Postmates_logo.png"
+  },
+  {
+    "name": "Dribbble",
+    "url": "http://dribbble.com",
+    "color": "#ea4c89",
+    "logo": "Dribbble_logo.png"
+  },
+  {
+    "name": "Waze",
+    "url": "https://www.waze.com/",
+    "color": "#93C4D3",
+    "logo": "Waze_logo.png"
+  },
+  {
+    "name": "Instacart",
+    "url": "https://www.instacart.com/",
+    "color": "#60ab59",
+    "logo": "Instacart_logo.png"
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/",
+    "color": "#231f20",
+    "logo": "Medium_logo.png"
+  },
+  {
+    "name": "Shazam",
+    "url": "http://www.shazam.com/",
+    "color": "#1580F8",
+    "logo": "Shazam_logo.png"
+  },
+  {
+    "name": "Seamless",
+    "url": "http://seamless.com",
+    "color": "#C92027",
+    "logo": "Seamless_logo.png"
+  },
+  {
+    "name": "Twitch",
+    "url": "http://www.twitch.tv/",
+    "color": "#6441A5",
+    "logo": "Twitch_logo.png"
+  },
+  {
+    "name": "Handy",
+    "url": "http://www.handy.com/",
+    "color": "#4dd1ee",
+    "logo": "Handy_logo.png"
+  },
+  {
+    "name": "Google Maps",
+    "url": "https://maps.google.com",
+    "color": "#27A264",
+    "logo": "Google_Maps_logo.png"
+  },
+  {
+    "name": "Slack",
+    "url": "https://slack.com",
+    "color": "#3AA497",
+    "logo": "Slack_logo.png"
+  },
+  {
+    "name": "Google Glass",
+    "url": "http://www.google.com/glass/",
+    "color": "#141414",
+    "logo": "Google_Glass_logo.png"
+  },
+  {
+    "name": "Stripe",
+    "url": "https://stripe.com/",
+    "color": "#2982C9",
+    "logo": "Stripe_logo.png"
+  },
+  {
+    "name": "ProductHunt",
+    "url": "http://producthunt.com",
+    "color": "#da552f",
+    "logo": "ProductHunt_logo.png"
+  },
+  {
+    "name": "Bitcoin",
+    "url": "https://bitcoin.org",
+    "color": "#F7931A",
+    "logo": "Bitcoin_logo.png"
+  },
+  {
+    "name": "Tumblr",
+    "url": "http://tumblr.com",
+    "color": "#35465c",
+    "logo": "Tumblr_logo.png"
+  },
+  {
+    "name": "Dropbox",
+    "url": "https://dropbox.com",
+    "color": "#007ee5",
+    "logo": "Dropbox_logo.png"
+  },
+  {
+    "name": "Flipboard",
+    "url": "https://flipboard.com/",
+    "color": "#E02828",
+    "logo": "Flipboard_logo.png"
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com",
+    "color": "#4183c4",
+    "logo": "Github_logo.png"
+  },
+  {
+    "name": "Wordpress",
+    "url": "https://wordpress.com/",
+    "color": "#268DBC",
+    "logo": "Wordpress_logo.png"
+  },
+  {
+    "name": "Wikipedia",
+    "url": "http://wikipedia.org/",
+    "color": "#000000",
+    "logo": "Wikipedia_logo.png"
+  },
+  {
+    "name": "Apple Pay",
+    "url": "https://www.apple.com/apple-pay/",
+    "color": "#333333",
+    "logo": "Apple_Pay_logo.png"
+  },
+  {
+    "name": "Evernote",
+    "url": "https://evernote.com/",
+    "color": "#7ac142",
+    "logo": "Evernote_logo.png"
+  },
+  {
+    "name": "Yo",
+    "url": "https://www.justyo.co/",
+    "color": "#9B5AB6",
+    "logo": "Yo_logo.png"
+  },
+  {
+    "name": "Mixpanel",
+    "url": "https://mixpanel.com/",
+    "color": "#6B7489",
+    "logo": "Mixpanel_logo.png"
+  },
+  {
+    "name": "Uber",
+    "url": "http://uber.com",
+    "color": "#1A1A1A",
+    "logo": "Uber_logo.png"
+  },
+  {
+    "name": "Snapchat",
+    "url": "https://www.snapchat.com/",
+    "color": "#FFFC01",
+    "logo": "Snapchat_logo.png"
+  },
+  {
+    "name": "Square Cash",
+    "url": "https://cash.me/",
+    "color": "#32BF21",
+    "logo": "Square_Cash_logo.png"
+  },
+  {
+    "name": "Siri",
+    "url": "https://www.apple.com/ios/siri/",
+    "color": "#4BDA66",
+    "logo": "Siri_logo.png"
+  },
+  {
+    "name": "Quora",
+    "url": "http://www.quora.com/",
+    "color": "#a82400",
+    "logo": "Quora_logo.png"
+  },
+  {
+    "name": "Twitter",
+    "url": "http://twitter.com",
+    "color": "#55acee",
+    "logo": "Twitter_logo.png"
+  },
+  {
+    "name": "Operator",
+    "url": "https://www.operator.com",
+    "color": "#3B3B47",
+    "logo": "Operator_logo.png"
+  },
+  {
+    "name": "Foursquare",
+    "url": "https://foursquare.com",
+    "color": "#f94877",
+    "logo": "Foursquare_logo.png"
+  },
+  {
+    "name": "Airbnb",
+    "url": "https://www.airbnb.com/",
+    "color": "#fd5c63",
+    "logo": "Airbnb_logo.png"
+  },
+  {
+    "name": "Skillshare",
+    "url": "http://www.skillshare.com/",
+    "color": "#F16B2F",
+    "logo": "Skillshare_logo.png"
+  },
+  {
+    "name": "Mailchimp",
+    "url": "http://mailchimp.com/",
+    "color": "#E85C41",
+    "logo": "Mailchimp_logo.png"
+  },
+  {
+    "name": "Tesla",
+    "url": "http://www.teslamotors.com/",
+    "color": "#cc0000",
+    "logo": "Tesla_logo.png"
+  },
+  {
+    "name": "Google",
+    "url": "http://www.google.com",
+    "color": "#4285f4",
+    "logo": "Google_logo.png"
+  },
+  {
+    "name": "Kickstarter",
+    "url": "http://kickstarter.com/",
+    "color": "#2bde73",
+    "logo": "Kickstarter_logo.png"
+  },
+  {
+    "name": "Facebook Messenger",
+    "url": "https://www.messenger.com/",
+    "color": "#0084FF",
+    "logo": "Facebook_Messenger_logo.png"
+  },
+  {
+    "name": "PayPal",
+    "url": "http://www.paypal.com/",
+    "color": "#009cde",
+    "logo": "PayPal_logo.png"
+  },
+  {
+    "name": "Apple Watch",
+    "url": "https://www.apple.com/watch/",
+    "color": "#000000",
+    "logo": "Apple_Watch_logo.png"
+  },
+  {
+    "name": "Spotify",
+    "url": "https://www.spotify.com/",
+    "color": "#2ebd59",
+    "logo": "Spotify_logo.png"
+  },
+  {
+    "name": "Adroll",
+    "url": "https://www.adroll.com/",
+    "color": "#00A8DF",
+    "logo": "Adroll_logo.png"
+  },
+  {
+    "name": "Zendesk",
+    "url": "https://www.zendesk.com/",
+    "color": "#78A300",
+    "logo": "Zendesk_logo.png"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/",
+    "color": "#ff9900",
+    "logo": "Amazon_logo.png"
+  },
+  {
+    "name": "Disqus",
+    "url": "https://disqus.com/",
+    "color": "#2e9fff",
+    "logo": "Disqus_logo.png"
+  },
+  {
+    "name": "Groupon",
+    "url": "https://www.groupon.com/",
+    "color": "#83B44E",
+    "logo": "Groupon_logo.png"
+  },
+  {
+    "name": "Pandora",
+    "url": "http://www.pandora.com/",
+    "color": "#005483",
+    "logo": "Pandora_logo.png"
+  },
+  {
+    "name": "Nest",
+    "url": "https://nest.com/",
+    "color": "#1DAFD7",
+    "logo": "Nest_logo.png"
+  },
+  {
+    "name": "Pocket",
+    "url": "https://getpocket.com/",
+    "color": "#EC4259",
+    "logo": "Pocket_logo.png"
+  },
+  {
+    "name": "Basecamp",
+    "url": "https://basecamp.com/",
+    "color": "#26AC50",
+    "logo": "Basecamp_logo.png"
+  },
+  {
+    "name": "Etsy",
+    "url": "https://www.etsy.com/",
+    "color": "#d5641c",
+    "logo": "Etsy_logo.png"
+  },
+  {
+    "name": "Meetup",
+    "url": "http://www.meetup.com/",
+    "color": "#E51937",
+    "logo": "Meetup_logo.png"
+  },
+  {
+    "name": "Reddit",
+    "url": "http://reddit.com",
+    "color": "#ff4500",
+    "logo": "Reddit_logo.png"
+  },
+  {
+    "name": "Tinder",
+    "url": "https://www.gotinder.com/",
+    "color": "#F55452",
+    "logo": "Tinder_logo.png"
+  },
+  {
+    "name": "Netflix",
+    "url": "https://netflix.com",
+    "color": "#e50914",
+    "logo": "Netflix_logo.png"
+  },
+  {
+    "name": "Skype",
+    "url": "http://www.skype.com/",
+    "color": "#00AFF0",
+    "logo": "Skype_logo.png"
+  },
+  {
+    "name": "Instagram",
+    "url": "http://instagram.com/",
+    "color": "#3f729b",
+    "logo": "Instagram_logo.png"
+  },
+  {
+    "name": "OpenTable",
+    "url": "http://www.opentable.com/",
+    "color": "#DB3943",
+    "logo": "OpenTable_logo.png"
+  },
+  {
+    "name": "WhatsApp",
+    "url": "https://www.whatsapp.com/",
+    "color": "#4dc247",
+    "logo": "WhatsApp_logo.png"
+  },
+  {
+    "name": "Sonos",
+    "url": "http://www.sonos.com/",
+    "color": "#222",
+    "logo": "Sonos_logo.png"
+  },
+  {
+    "name": "Oculus",
+    "url": "https://www.oculus.com/",
+    "color": "#1C1E20",
+    "logo": "Oculus_logo.png"
+  },
+  {
+    "name": "Find My Friends",
+    "url": "https://www.apple.com/apps/find-my-friends/",
+    "color": "#FDAE30",
+    "logo": "Find_My_Friends_logo.png"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/",
+    "color": "#cd201f",
+    "logo": "YouTube_logo.png"
+  },
+  {
+    "name": "Soundcloud",
+    "url": "https://soundcloud.com/",
+    "color": "#ff8800",
+    "logo": "Soundcloud_logo.png"
+  },
+  {
+    "name": "TripAdvisor",
+    "url": "http://www.tripadvisor.com/",
+    "color": "#579542",
+    "logo": "TripAdvisor_logo.png"
+  }
+]

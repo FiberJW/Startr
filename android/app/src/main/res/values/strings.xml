@@ -1,0 +1,4 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">uWtKdrwarP89-7QRVh5UQleGq8TPE1K8RUZRZ</string>
+    <string name="app_name">Startr</string>
+</resources>
