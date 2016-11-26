@@ -23,8 +23,7 @@ class App extends Component {
 
     this.state = {
       startUps: [],
-      bounceValue: new Animated.Value(0),
-      fadeAnim: new Animated.Value(0),
+      bounceValue: new Animated.Value(1),
     };
   }
 
@@ -42,7 +41,7 @@ class App extends Component {
       this.state.bounceValue,
       {
         toValue: 1,
-        friction: 8,
+        friction: 5,
       }
     ).start();
   }
