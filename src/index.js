@@ -45,7 +45,6 @@ class App extends Component {
         style={{
           flex: 1,
           paddingTop: StatusBar.currentHeight,
-          backgroundColor: this.state.startUps[1].color,
           backgroundColor: this.state.startUps[0].color,
         }}
       >
