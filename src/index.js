@@ -44,133 +44,126 @@ class App extends Component {
       <View
         style={{
           flex: 1,
+          paddingTop: StatusBar.currentHeight,
           backgroundColor: this.state.startUps[1].color,
+          backgroundColor: this.state.startUps[0].color,
         }}
       >
+        <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
         <View
           style={{
-            paddingTop: StatusBar.currentHeight,
-            marginBottom: 50,
+            justifyContent: 'center',
+            alignItems: 'center',
             flex: 1,
             backgroundColor: this.state.startUps[0].color,
           }}
         >
-          <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
+          <Animated.Image
+            source={ requireLogo(this.state.startUps[0].logo) }
+            resizeMode="contain"
+            style={{
+              height: 100,
+              marginBottom: 60,
+              transform: [                        // `transform` is an ordered array
+              { scale: this.state.bounceValue },  // Map `bounceValue` to `scale`
+              ],
+            }}
+          />
           <View
             style={{
+              bottom: 0,
+              left: 0,
+              right: 0,
+              position: 'absolute',
+              backgroundColor: 'rgba(0, 0, 0, 0.25)',
               justifyContent: 'center',
               alignItems: 'center',
-              flex: 1,
-              backgroundColor: this.state.startUps[0].color,
+              height: 50,
+              width: Dimensions.get('window').width,
             }}
           >
-            <Animated.Image
-              source={ requireLogo(this.state.startUps[0].logo) }
-              resizeMode="contain"
-              style={{
-                height: 100,
-                marginBottom: 60,
-                transform: [                        // `transform` is an ordered array
-                { scale: this.state.bounceValue },  // Map `bounceValue` to `scale`
-                ],
-              }}
-            />
-            <View
-              style={{
-                bottom: 0,
-                left: 0,
-                right: 0,
-                position: 'absolute',
-                backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: 50,
-                width: Dimensions.get('window').width,
-              }}
+            <TouchableNativeFeedback
+              onPress={ () => Linking.openURL(this.state.startUps[0].url) }
+              background={ TouchableNativeFeedback.SelectableBackground() }
             >
-              <TouchableNativeFeedback
-                onPress={ () => Linking.openURL(this.state.startUps[0].url) }
-                background={ TouchableNativeFeedback.SelectableBackground() }
-              >
-                <Text
-                  style={{
-                    color: 'white',
-                    fontSize: 24,
-                    textAlign: 'center',
-                    fontFamily: 'gotham_light',
-                  }}
-                >
-                  {this.state.startUps[0].name}
-                </Text>
-              </TouchableNativeFeedback>
-            </View>
-          </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              flex: 1,
-              backgroundColor: this.state.startUps[1].color,
-            }}
-          >
-            <View
-              style={{
-                top: 0,
-                left: 0,
-                right: 0,
-                position: 'absolute',
-                backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: 50,
-                width: Dimensions.get('window').width,
-              }}
-            >
-              <TouchableNativeFeedback
-                onPress={ () => Linking.openURL(this.state.startUps[1].url) }
+              <Text
                 style={{
+                  color: 'white',
+                  fontSize: 24,
+                  textAlign: 'center',
+                  fontFamily: 'gotham_light',
                 }}
-                background={ TouchableNativeFeedback.SelectableBackground() }
               >
-                <Text
-                  style={{
-                    color: 'white',
-                    fontSize: 24,
-                    textAlign: 'center',
-                    fontFamily: 'gotham_light',
-                  }}
-                >
-                  {this.state.startUps[1].name}
-                </Text>
-              </TouchableNativeFeedback>
-            </View>
-            <Animated.Image                         // Base: Image, Text, View
-              source={ requireLogo(this.state.startUps[0].logo) }
-              source={ requireLogo(this.state.startUps[1].logo) }
-              resizeMode="contain"
-              style={{
-                height: 100,
-                marginTop: 60,
-                transform: [                        // `transform` is an ordered array
-                { scale: this.state.bounceValue },  // Map `bounceValue` to `scale`
-                ],
-              }}
-            />
+                {this.state.startUps[0].name}
+              </Text>
+            </TouchableNativeFeedback>
           </View>
-          <ActionButton
-            ref={ c => { this.actionButton = c; } }
-            icon={ <Icon name="md-refresh" style={ styles.actionButtonIcon } /> }
-            buttonColor="#424242"
-            offsetX={ 16 }
-            degrees={ 360 }
-            offsetY={ -8 }
-            onPress={ () => {
-              this.setState({ startUps: getStartups() });
-              this.actionButton.animateButton();
-              setTimeout(() => this.actionButton.reset(), 350);
-            } }
+        </View>
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            flex: 1,
+            backgroundColor: this.state.startUps[1].color,
+          }}
+        >
+          <View
+            style={{
+              top: 0,
+              left: 0,
+              right: 0,
+              position: 'absolute',
+              backgroundColor: 'rgba(0, 0, 0, 0.25)',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: 50,
+              width: Dimensions.get('window').width,
+            }}
+          >
+            <TouchableNativeFeedback
+              onPress={ () => Linking.openURL(this.state.startUps[1].url) }
+              style={{
+              }}
+              background={ TouchableNativeFeedback.SelectableBackground() }
+            >
+              <Text
+                style={{
+                  color: 'white',
+                  fontSize: 24,
+                  textAlign: 'center',
+                  fontFamily: 'gotham_light',
+                }}
+              >
+                {this.state.startUps[1].name}
+              </Text>
+            </TouchableNativeFeedback>
+          </View>
+          <Animated.Image                         // Base: Image, Text, View
+            source={ requireLogo(this.state.startUps[0].logo) }
+            source={ requireLogo(this.state.startUps[1].logo) }
+            resizeMode="contain"
+            style={{
+              height: 100,
+              marginTop: 60,
+              transform: [                        // `transform` is an ordered array
+              { scale: this.state.bounceValue },  // Map `bounceValue` to `scale`
+              ],
+            }}
           />
         </View>
+        <ActionButton
+          ref={ c => { this.actionButton = c; } }
+          icon={ <Icon name="md-refresh" style={ styles.actionButtonIcon } /> }
+          buttonColor="#424242"
+          offsetX={ 16 }
+          degrees={ 360 }
+          offsetY={ -8 }
+          onPress={ () => {
+            this.setState({ startUps: getStartups() });
+            this.actionButton.animateButton();
+            setTimeout(() => this.actionButton.reset(), 350);
+          } }
+        />
       </View>
     );
   }
