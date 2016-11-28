@@ -1,6 +1,6 @@
 # Startr
 
-[StartupBreeding](startupbreeding.com) for mobile.
+[StartupBreeding](http://startupbreeding.com) for mobile.
 
 
 Clone this, `npm i`, and `react-native run-<platform>`
