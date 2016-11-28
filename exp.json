@@ -1,0 +1,19 @@
+{
+  "name": "Startr",
+  "description": "\"Like Airbnb for Uber.\" Inspiration for your next startup. Built by Juwan Wheatley - https://github.com/datwheat/Startr",
+  "slug": "startr",
+  "sdkVersion": "11.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#cccccc",
+  "iconUrl": "http://url.brentvatne.ca/Xn1N.png",
+  "loading": {
+    "iconUrl": "http://url.brentvatne.ca/Xn1N.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": [
+      "ttf"
+    ]
+  }
+}

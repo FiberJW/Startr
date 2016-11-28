@@ -7,14 +7,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "@exponent/react-native-touchable-native-feedback-safe": "^1.1.1",
+    "@exponent/vector-icons": "~2.0.0",
     "chalkdust": "^1.1.0",
-    "react": "15.4.1",
-    "react-native": "0.38.0",
+    "exponent": "~11.0.2",
+    "react": "~15.3.2",
+    "react-native": "github:exponentjs/react-native#sdk-11.0.3",
     "react-native-action-button": "^2.0.15",
-    "react-native-admob": "^1.1.5",
-    "react-native-code-push": "^1.16.0-beta",
-    "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git",
-    "react-native-vector-icons": "^3.0.0"
+    "react-native-vector-icons": "~3.0.0"
   },
   "jest": {
     "preset": "react-native"
@@ -24,5 +24,6 @@
     "babel-preset-react-native": "1.9.0",
     "jest": "17.0.3",
     "react-test-renderer": "15.4.1"
-  }
+  },
+  "main": "main.js"
 }

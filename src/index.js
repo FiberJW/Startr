@@ -7,13 +7,10 @@ import {
   Text,
   StatusBar,
   Linking,
-  TouchableNativeFeedback,
 } from 'react-native';
 import ActionButton from 'react-native-action-button';
+import TouchableNativeFeedback from '@exponent/react-native-touchable-native-feedback-safe';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { AdMobBanner } from 'react-native-admob';
-import Orientation from 'react-native-orientation';
-import codePush from 'react-native-code-push';
 import getStartups from './utils/getStartups';
 import requireLogo from './images/requireLogo';
 
@@ -29,10 +26,6 @@ class App extends Component {
 
   componentWillMount() {
     this.setState({ startUps: getStartups() });
-  }
-
-  componentDidMount() {
-    Orientation.lockToPortrait();
   }
 
   componentWillUpdate() {
@@ -71,7 +64,7 @@ class App extends Component {
               backgroundColor: this.state.startUps[0].color,
             }}
           >
-            <Animated.Image                         // Base: Image, Text, View
+            <Animated.Image
               source={ requireLogo(this.state.startUps[0].logo) }
               resizeMode="contain"
               style={{
@@ -82,23 +75,22 @@ class App extends Component {
                 ],
               }}
             />
-            <TouchableNativeFeedback
-              onPress={ () => Linking.openURL(this.state.startUps[0].url) }
+            <View
               style={{
+                bottom: 0,
+                left: 0,
+                right: 0,
+                position: 'absolute',
+                backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: 50,
+                width: Dimensions.get('window').width,
               }}
-              background={ TouchableNativeFeedback.SelectableBackground() }
             >
-              <View
-                style={{
-                  bottom: 0,
-                  right: 0,
-                  position: 'absolute',
-                  backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: 50,
-                  width: Dimensions.get('window').width,
-                }}
+              <TouchableNativeFeedback
+                onPress={ () => Linking.openURL(this.state.startUps[0].url) }
+                background={ TouchableNativeFeedback.SelectableBackground() }
               >
                 <Text
                   style={{
@@ -110,8 +102,8 @@ class App extends Component {
                 >
                   {this.state.startUps[0].name}
                 </Text>
-              </View>
-            </TouchableNativeFeedback>
+              </TouchableNativeFeedback>
+            </View>
           </View>
           <View
             style={{
@@ -121,23 +113,24 @@ class App extends Component {
               backgroundColor: this.state.startUps[1].color,
             }}
           >
-            <TouchableNativeFeedback
-              onPress={ () => Linking.openURL(this.state.startUps[1].url) }
+            <View
               style={{
+                top: 0,
+                left: 0,
+                right: 0,
+                position: 'absolute',
+                backgroundColor: 'rgba(0, 0, 0, 0.25)',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: 50,
+                width: Dimensions.get('window').width,
               }}
-              background={ TouchableNativeFeedback.SelectableBackground() }
             >
-              <View
+              <TouchableNativeFeedback
+                onPress={ () => Linking.openURL(this.state.startUps[1].url) }
                 style={{
-                  top: 0,
-                  right: 0,
-                  position: 'absolute',
-                  backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  height: 50,
-                  width: Dimensions.get('window').width,
                 }}
+                background={ TouchableNativeFeedback.SelectableBackground() }
               >
                 <Text
                   style={{
@@ -149,8 +142,8 @@ class App extends Component {
                 >
                   {this.state.startUps[1].name}
                 </Text>
-              </View>
-            </TouchableNativeFeedback>
+              </TouchableNativeFeedback>
+            </View>
             <Animated.Image                         // Base: Image, Text, View
               source={ requireLogo(this.state.startUps[0].logo) }
               source={ requireLogo(this.state.startUps[1].logo) }
@@ -178,17 +171,6 @@ class App extends Component {
             } }
           />
         </View>
-        <AdMobBanner
-          style={{
-            position: 'absolute',
-            bottom: 0,
-            right: 0,
-          }}
-          bannerSize="smartBanner"
-          adUnitID="ca-app-pub-8865769945040882/4706663054"
-          testDeviceID="EMULATOR"
-          didFailToReceiveAdWithError={ (e) => console.log(e) }
-        />
       </View>
     );
   }
@@ -203,4 +185,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default codePush(App);
+export default App;
