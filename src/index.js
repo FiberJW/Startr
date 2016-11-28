@@ -8,6 +8,8 @@ import {
   StatusBar,
   Linking,
   TouchableNativeFeedback,
+  TouchableOpacity,
+  Platform,
 } from 'react-native';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -16,6 +18,8 @@ import Orientation from 'react-native-orientation';
 import codePush from 'react-native-code-push';
 import getStartups from './utils/getStartups';
 import requireLogo from './images/requireLogo';
+
+const Touchable = Platform.OS === 'ios' ? TouchableOpacity : TouchableNativeFeedback;
 
 class App extends Component {
   constructor(props) {
@@ -82,11 +86,11 @@ class App extends Component {
                 ],
               }}
             />
-            <TouchableNativeFeedback
+            <Touchable
               onPress={ () => Linking.openURL(this.state.startUps[0].url) }
               style={{
               }}
-              background={ TouchableNativeFeedback.SelectableBackground() }
+              // background={ TouchableNativeFeedback.SelectableBackground() }
             >
               <View
                 style={{
@@ -111,7 +115,7 @@ class App extends Component {
                   {this.state.startUps[0].name}
                 </Text>
               </View>
-            </TouchableNativeFeedback>
+            </Touchable>
           </View>
           <View
             style={{
@@ -121,11 +125,11 @@ class App extends Component {
               backgroundColor: this.state.startUps[1].color,
             }}
           >
-            <TouchableNativeFeedback
+            <Touchable
               onPress={ () => Linking.openURL(this.state.startUps[1].url) }
               style={{
               }}
-              background={ TouchableNativeFeedback.SelectableBackground() }
+              // background={ TouchableNativeFeedback.SelectableBackground() }
             >
               <View
                 style={{
@@ -150,7 +154,7 @@ class App extends Component {
                   {this.state.startUps[1].name}
                 </Text>
               </View>
-            </TouchableNativeFeedback>
+            </Touchable>
             <Animated.Image                         // Base: Image, Text, View
               source={ requireLogo(this.state.startUps[0].logo) }
               source={ requireLogo(this.state.startUps[1].logo) }
