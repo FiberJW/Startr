@@ -55,7 +55,7 @@ class App extends Component {
             backgroundColor: this.state.startUps[0].color,
           }}
         >
-          <StatusBar translucent backgroundColor="transparent" />
+          <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
           <View
             style={{
               justifyContent: 'center',
